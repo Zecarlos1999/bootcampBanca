@@ -1,8 +1,8 @@
 server: 
-    port: 8002
+    port: 8083
 spring:
   application:
     name: service-politics
   data:
      mongodb:
-      database: banca
+      database: BancaP
