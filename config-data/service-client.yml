@@ -1,0 +1,9 @@
+server:
+    port: 9999
+spring:
+    application:
+        name: service-client
+    data:
+        mongodb:
+            uri: mongodb+srv://admin:admin2000@clusterbanca.zdoxm.mongodb.net/test
+            database: banca
