@@ -13,6 +13,6 @@ spring:
     gateway:
       routes:
         - id: service-client
-          uri: lb://service-client
+          uri: localhost:8082
           predicates:
              - Path=/client/**  
