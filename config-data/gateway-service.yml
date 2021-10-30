@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8099
 
 eureka:
     client:
@@ -11,8 +11,11 @@ eureka:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: service-client
-          uri: service-client
+          uri: http://localhost:8082/
           predicates:
              - Path=/client/**  
