@@ -7,7 +7,6 @@ spring:
       - id: service-product
         uri: lb://service-product
         predicates: Path=/product/**
-        filters: StripPrefix=2
 eureka:
   client:
     serviceUrl:
