@@ -10,12 +10,7 @@ spring:
         uri: lb://service-product
         predicates:
         - Path=/product/**
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-  instance:
-    preferIpAddress: true
+
 managment:
   edpoints:
     web:
